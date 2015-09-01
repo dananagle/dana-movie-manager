@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 ruby '2.2.2'
+gem 'devise'
 gem 'twitter-bootstrap-rails'
 gem "font-awesome-rails"
 gem 'simple_form'
