@@ -6,7 +6,7 @@
               <thead>
                 <% if @current_user.nil? %>
                 <% else %>
-                  <h3> Hello <%= @current_user.username %>! You have <%= @movies.count %> movies saved </h3>
+                  <h3> Welcome <%= @current_user.username %>! We already have <%= @movies.count %> movies in our system.  Please add to our collection. </h3>
                 <% end %>
                   <%= link_to "New movie", new_path, class:"btn btn-default add-movie", remote: true %>
               </thead>

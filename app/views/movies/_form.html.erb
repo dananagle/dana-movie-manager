@@ -4,6 +4,5 @@
  <%= f.input :length, label: false, placeholder: "Length of Movie" %>
  <%= f.input :release, label: false, placeholder:"Year Released" %>
  <%= f.input :rating, :collection => 1..5, :as => :radio_buttons, placeholder:"Evaluate the movie" %>
- <%= f.input :rating, as: :select, collection: (1..5)  , input_html: {class: "rating"}, prompt: false %>
  <%= f.button :submit, class:"login-btn"  %>
 <%end %>
