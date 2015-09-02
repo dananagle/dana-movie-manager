@@ -1,7 +1,12 @@
 class PagesController < ApplicationController
+
   def home
-    if current_user
-    redirect_to movies_path
-    end
+  	if current_user
+  		redirect_to books_path
+  	end
   end
+
+  def dashboard
+  end
+
 end

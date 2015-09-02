@@ -1,8 +1,27 @@
 Rails.application.routes.draw do
-  
-  resources :movies
-  devise_for :users
-  root "pages#home"
+  root 'movies#dashboard'
+
+   get '/signup' => 'users#new', as: :signup
+   post '/users' => 'users#create', as: :users
+
+  # get '/movies/auth/facebook' => 'sessions#create'
+  get '/login' => 'sessions#new', as: :login
+  post '/auth' => 'sessions#create', as: :auth
+  get '/logout' => 'sessions#destroy', as: :logout
+
+  get 'movies/index'=> 'movies#index', as: :index
+  get 'movies/new' => 'movies#new', as: :new
+  get 'movies/:id' => 'movies#show', as: :movie
+  post '/movies' => 'movies#create', as: :movies
+  patch 'movies/:id' => 'movies#update', as: :update
+  delete '/movies/:id' => 'movies#destroy', as: :delete
+  get 'movies/:id/edit' => 'movies#edit', as: :edit
+
+  # GmailAlerts::Application.routes.draw do
+  #   root to: 'sessions#new'
+  #   resources :sessions, only: :index
+  #   get "/auth/:provider/callback" => 'sessions#create'
+  # end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

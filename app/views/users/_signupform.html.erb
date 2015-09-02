@@ -1,0 +1,12 @@
+<div class="row">
+  <h3> Create an account </h3>
+  <div class="col-md-6 col-md-offset-3">
+    <%= simple_form_for @user, remote: true do |f| %>
+      <%= f.input :username, label: false, placeholder:"Username" %>
+      <%= f.input :email, label: false, placeholder:"Email" %>
+      <%= f.input :password, label: false, placeholder:"Password" %>
+      <%= f.input :password_confirmation, label: false, placeholder:"Password Confirmation" %>
+      <%= f.button :submit, class:"login-btn"  %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,3 @@
+$("tr[data-movie-id='<%= @movie.id %>']").hide("slow");
+
+$("#movie-table").html("<%= j render partial: 'movie_table' %>");

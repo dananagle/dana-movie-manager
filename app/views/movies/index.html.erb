@@ -1,35 +1,37 @@
-<p id="notice"><%= notice %></p>
+<div class="container movie-index">
+  <div class="col-md-12">
+      <div class="movie-table">
+        <div class="table-responsive">
+        <table class="table table-hover table-bordered table-condensed">
+              <thead>
+                <% if @current_user.nil? %>
+                <% else %>
+                  <h3> Hello <%= @current_user.username %>! You have <%= @movies.count %> movies saved </h3>
+                <% end %>
+                  <%= link_to "New movie", new_path, class:"btn btn-default add-movie", remote: true %>
+              </thead>
+                <tr>
+                  <th> <%= sort_by 'title', title: 'Title', current_column: @sort_column %> </th>
+                  <th><%= sort_by 'format', title: 'Format ', current_column: @sort_column %>  </th>
+                  <th><%= sort_by 'length', title: 'Length', current_column: @sort_column %>  </th>
+                  <th><%= sort_by 'release', title: 'Release Year', current_column: @sort_column %>  </th>
+                  <th><%= sort_by 'rating', title: 'Rating', current_column: @sort_column %>   </th>
+                  <th> Delete </th>
+                  <th> Edit </th>
+                </tr>
 
-<h1>Listing Movies</h1>
+              <tbody>
+                <% @movies.each do |movie| %>
+                <tr data-movie-id="<%= movie.id %>">
+                  <%= render partial: 'table', locals: {movie: movie} %>
+                </tr>
+                <% end %>
+              </tbody>
+        </table>
+      </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Format</th>
-      <th>Length</th>
-      <th>Release</th>
-      <th>Rating</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @movies.each do |movie| %>
-      <tr>
-        <td><%= movie.title %></td>
-        <td><%= movie.format %></td>
-        <td><%= movie.length %></td>
-        <td><%= movie.release %></td>
-        <td><%= movie.rating %></td>
-        <td><%= link_to 'Show', movie %></td>
-        <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
-        <td><%= link_to 'Destroy', movie, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Movie', new_movie_path %>
+      </div>
+      </div> <!--media-->
+    </div> <!-- row -->
+  </div> <!-- col-md-12-->
+</div>

@@ -1,0 +1,6 @@
+<% if @movie.errors.none? %>
+  $("#super-wicked-modal").modal("hide");
+
+<%else %>
+  $(".modal-body").html("<%= j render partial: 'form' %>");
+<% end %>
