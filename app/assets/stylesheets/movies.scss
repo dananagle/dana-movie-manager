@@ -17,7 +17,7 @@
   h1 {
     font-size: 40px;
     font-weight: bold;
-    color: #FFFFFF;
+    color: #f8f8f8;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
 }
@@ -43,7 +43,7 @@ body {
 }
 .button:hover {
   background-color: #000000;
-  color: #red;
+  color: #3B5269;
 }
 
 .movie-index {
@@ -82,20 +82,20 @@ body {
   }
   td {
     font-family: sans-serif;
-    color: red;
+    color: #0D4985;
     font-size: 16px;
     font-weight: bold;
   }
   th a{
     font-family: sans-serif;
-    color: red;
+    color: #0D4985;
     text-align: center;
     font-weight: bold;
     font-size: 20px;
   }
   th {
     font-family: sans-serif;
-    color: red;
+    color: #0D4985;
     text-align: center;
     font-weight: bold;
     font-size: 20px;
@@ -103,7 +103,7 @@ body {
 }
 
 .btn-default{
-  background: #red;
+  background: #0D4985;
   margin-bottom: 10px;
   color: white;
 }
