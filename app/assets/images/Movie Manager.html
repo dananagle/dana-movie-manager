@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://localhost:3000/movies/index -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Movie Manager</title>
+  <link rel="stylesheet" media="all" href="./Movie Manager_files/movies.self-eeab974431957f2b3bf707788013d27637afd5b49a4bb4fcf690b8c769df6fbe.css" data-turbolinks-track="true">
+<link rel="stylesheet" media="all" href="./Movie Manager_files/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" data-turbolinks-track="true">
+<link rel="stylesheet" media="all" href="./Movie Manager_files/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" data-turbolinks-track="true">
+<link rel="stylesheet" media="all" href="./Movie Manager_files/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" data-turbolinks-track="true">
+<link rel="stylesheet" media="all" href="./Movie Manager_files/application.self-1b8ff04a46b082531528f62a44a47f7dd99f32ef60477657a68d4006e61d1950.css" data-turbolinks-track="true">
+  <script src="./Movie Manager_files/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js" data-turbolinks-track="true"></script>
+<script src="./Movie Manager_files/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js" data-turbolinks-track="true"></script>
+<script src="./Movie Manager_files/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js" data-turbolinks-track="true"></script>
+<script src="./Movie Manager_files/movies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js" data-turbolinks-track="true"></script>
+<script src="./Movie Manager_files/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js" data-turbolinks-track="true"></script>
+<script src="./Movie Manager_files/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js" data-turbolinks-track="true"></script>
+<script src="./Movie Manager_files/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js" data-turbolinks-track="true"></script>
+<script src="./Movie Manager_files/application.self-2f93c522be4d582e8133085e7822b09921b568a971415aac5e1315ec0ad62729.js" data-turbolinks-track="true"></script>
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="1H6RH5ZNoSbi0N9RLukoKuuP7hnqH3gviPmwahMx9nKdpHKsFtkBQiqaE3bBm6qTnNCC3W/mPZiSDkoAkpILew==">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./Movie Manager_files/css" rel="stylesheet" type="text/css">
+  <link href="./Movie Manager_files/css(1)" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="http://localhost:3000/">Home</a>
+
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+            <li> <a href="http://localhost:3000/logout">Sign out</a> </li>
+            <li> <a href="./Movie Manager_files/Movie Manager.html">Movies</a> </li>
+
+        </ul>
+      </div>
+    </div> <!--collapse navbar -->
+    
+  </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="interest-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <br>
+
+          </div>
+          <div class="modal-body">
+
+            {TEXT}
+          </div>
+          <div class="modal-footer">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<div class="container movie-index">
+  <div class="col-md-12">
+      <div class="movie-table">
+        <div class="table-responsive">
+        <h3> Welcome Hello! We already have 4 movies in our system.  Please add to our collection. </h3><a class="btn btn-default add-movie" data-remote="true" href="http://localhost:3000/movies/new">New movie</a><table class="table table-hover table-bordered table-condensed">
+              <thead>
+                  
+                  
+              </thead>
+                <tbody><tr>
+                  <th> <a class="current asc" href="http://localhost:3000/movies/index?direction=desc&sort=title">Title</a> </th>
+                  <th><a href="http://localhost:3000/movies/index?direction=asc&sort=format">Format </a>  </th>
+                  <th><a href="http://localhost:3000/movies/index?direction=asc&sort=length">Length</a>  </th>
+                  <th><a href="http://localhost:3000/movies/index?direction=asc&sort=release">Release Year</a>  </th>
+                  <th><a href="http://localhost:3000/movies/index?direction=asc&sort=rating">Rating</a>   </th>
+                  <th> Delete </th>
+                  <th> Edit </th>
+                </tr>
+
+              </tbody><tbody>
+                <tr data-movie-id="8">
+                  <td>Annie Hall </td>
+<td>DVD </td>
+<td>02:12:00 </td>
+<td>1975 </td>
+<td>5 </td>
+<td> <a data-confirm="Are you sure?" class="btn btn-info movie-delete" data-remote="true" rel="nofollow" data-method="delete" href="http://localhost:3000/movies/8">Delete</a> </td>
+<td>   <a class="btn btn-info" data-remote="true" href="http://localhost:3000/movies/8/edit">Edit</a> </td>
+
+                </tr>
+                <tr data-movie-id="4">
+                  <td>Casablanca </td>
+<td>VHS </td>
+<td>02:22:00 </td>
+<td>1954 </td>
+<td>5 </td>
+<td> <a data-confirm="Are you sure?" class="btn btn-info movie-delete" data-remote="true" rel="nofollow" data-method="delete" href="http://localhost:3000/movies/4">Delete</a> </td>
+<td>   <a class="btn btn-info" data-remote="true" href="http://localhost:3000/movies/4/edit">Edit</a> </td>
+
+                </tr>
+                <tr data-movie-id="7">
+                  <td>Citizen Kane </td>
+<td>DVD </td>
+<td>02:16:00 </td>
+<td>1945 </td>
+<td>5 </td>
+<td> <a data-confirm="Are you sure?" class="btn btn-info movie-delete" data-remote="true" rel="nofollow" data-method="delete" href="http://localhost:3000/movies/7">Delete</a> </td>
+<td>   <a class="btn btn-info" data-remote="true" href="http://localhost:3000/movies/7/edit">Edit</a> </td>
+
+                </tr>
+                <tr data-movie-id="6">
+                  <td>Star Wars </td>
+<td>DVD </td>
+<td>02:09:00 </td>
+<td>1975 </td>
+<td>4 </td>
+<td> <a data-confirm="Are you sure?" class="btn btn-info movie-delete" data-remote="true" rel="nofollow" data-method="delete" href="http://localhost:3000/movies/6">Delete</a> </td>
+<td>   <a class="btn btn-info" data-remote="true" href="http://localhost:3000/movies/6/edit">Edit</a> </td>
+
+                </tr>
+              </tbody>
+        </table>
+      </div>
+
+      </div>
+      </div> <!--media-->
+    </div> <!-- row -->
+   <!-- col-md-12-->
+
+
+
+
+<div id="pageslide" style="display: none;"></div><div class="toutapp-toolbar no-print">
+  <div class="ch-item ch-img-1">
+    <div class="ch-idle">
+      <h3>ToutApp Niko</h3>   
+    </div>    
+    <div class="ch-info">
+      <h3>CLICK FOR DETAILS</h3>
+    </div>
+  </div>
+</div></body></html>

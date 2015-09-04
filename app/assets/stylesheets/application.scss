@@ -15,9 +15,4 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
-
- body.home-page {
-   background: {
-     color: #000;
-   }
- }
+ @import "movies"

@@ -1,0 +1,130 @@
+/* line 5, /Users/dananagle/dana_moviemanager/app/assets/stylesheets/movies.scss */
+.landing {
+  background: url(/assets/hollywood-4b18f3746d80d22a3b8f9c02c5e43f66cb5914a56c0b1efa370f5e76a53d9a15.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+}
+/* line 11, /Users/dananagle/dana_moviemanager/app/assets/stylesheets/movies.scss */
+.landing .landing_title {
+  height: 100%;
+  padding-top: 200px;
+  text-align: center;
+  font-family: sans-serif;
+}
+/* line 17, /Users/dananagle/dana_moviemanager/app/assets/stylesheets/movies.scss */
+.landing h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #f8f8f8;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/* line 24, /Users/dananagle/dana_moviemanager/app/assets/stylesheets/movies.scss */
+h3 {
+  text-align: center;
+}
+
+/* line 29, /Users/dananagle/dana_moviemanager/app/assets/stylesheets/movies.scss */
+body {
+  background: url(/assets/movie-b8eeae4344d81f50f42e1adfc2a4c77c467e7d4e7d74b6a434e68a565e5e005a.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+}
+
+/* line 37, /Users/dananagle/dana_moviemanager/app/assets/stylesheets/movies.scss */
+.button {
+  background-color: #white;
+  font-family: sans-serif;
+  color: black;
+  font-size: 20px;
+  border: none;
+}
+
+/* line 44, /Users/dananagle/dana_moviemanager/app/assets/stylesheets/movies.scss */
+.button:hover {
+  background-color: #000000;
+  color: #3B5269;
+}
+
+/* line 49, /Users/dananagle/dana_moviemanager/app/assets/stylesheets/movies.scss */
+.movie-index {
+  padding-top: 50px;
+}
+
+/* line 53, /Users/dananagle/dana_moviemanager/app/assets/stylesheets/movies.scss */
+.pull-right {
+  margin-top: 10px;
+}
+
+/* line 56, /Users/dananagle/dana_moviemanager/app/assets/stylesheets/movies.scss */
+.navbar-default {
+  background-color: #000000;
+}
+/* line 59, /Users/dananagle/dana_moviemanager/app/assets/stylesheets/movies.scss */
+.navbar-default .navbar-brand {
+  font-family: sans-serif;
+  color: #300b0e;
+  font-size: 20px;
+  font-weight: bolder;
+}
+/* line 65, /Users/dananagle/dana_moviemanager/app/assets/stylesheets/movies.scss */
+.navbar-default .navbar-nav li a {
+  color: AC2832;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+/* line 74, /Users/dananagle/dana_moviemanager/app/assets/stylesheets/movies.scss */
+.movie-table {
+  padding-top: 10px;
+  margin-top: 15%;
+  text-align: center;
+}
+/* line 78, /Users/dananagle/dana_moviemanager/app/assets/stylesheets/movies.scss */
+.movie-table h3 {
+  font-family: sans-serif;
+  color: white;
+  font-size: 25px;
+}
+/* line 83, /Users/dananagle/dana_moviemanager/app/assets/stylesheets/movies.scss */
+.movie-table td {
+  font-family: sans-serif;
+  color: #0D4985;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* line 89, /Users/dananagle/dana_moviemanager/app/assets/stylesheets/movies.scss */
+.movie-table th a {
+  font-family: sans-serif;
+  color: #0D4985;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+/* line 96, /Users/dananagle/dana_moviemanager/app/assets/stylesheets/movies.scss */
+.movie-table th {
+  font-family: sans-serif;
+  color: #0D4985;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* line 105, /Users/dananagle/dana_moviemanager/app/assets/stylesheets/movies.scss */
+.btn-default {
+  background: #0D4985;
+  margin-bottom: 10px;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  /* line 112, /Users/dananagle/dana_moviemanager/app/assets/stylesheets/movies.scss */
+  .movie-table {
+    margin-top: 35%;
+  }
+}
