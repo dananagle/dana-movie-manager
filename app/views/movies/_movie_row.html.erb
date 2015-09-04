@@ -1,7 +1,0 @@
-<td><%=movie.title%> </td>
-<td><%= movie.format %> </td>
-<td><%= Time.at((60)*(movie.length)).utc.strftime("%H:%M:%S") %> </td>
-<td><%= movie.release %> </td>
-<td><%=movie.rating %> </td>
-<td> <%= link_to "Delete", delete_path(id: movie.id),  method: :delete, data: {confirm: "Are you sure?"}, remote: true, class: 'btn btn-danger movie-delete' %> </td>
-<td>   <%= link_to "Edit", edit_path(id: movie.id), remote: true, class:'btn btn-info' %> </td>
