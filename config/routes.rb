@@ -17,6 +17,8 @@ Rails.application.routes.draw do
   delete '/movies/:id' => 'movies#destroy', as: :delete
   get 'movies/:id/edit' => 'movies#edit', as: :edit
 
+  get '/auth/:provider/callback', to: 'sessions#create'
+
   # GmailAlerts::Application.routes.draw do
   #   root to: 'sessions#new'
   #   resources :sessions, only: :index
